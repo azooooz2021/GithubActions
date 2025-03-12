@@ -1,6 +1,9 @@
 name: Lint
 
-on: run
+on: 
+  push: 
+    branches:
+      - '*'  # Runs on push to any branch; use '**' for branches with slashes
 
 jobs:
   lint:
