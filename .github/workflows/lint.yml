@@ -13,6 +13,6 @@ jobs:
     - name: install dependencies
       run: npm ci
 
-    # - name: lint
-    #   run: npm run lint
+    - name: lint
+      run: npm run lint
 
