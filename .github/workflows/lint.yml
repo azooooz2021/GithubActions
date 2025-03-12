@@ -1,4 +1,4 @@
-name: Lint
+name: Lint Test and Deploy
 
 on: push
 
@@ -7,16 +7,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    - name: get code
       uses: actions/checkout@v4
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
-
-    - name: Install dependencies
+    - name: install dependencies
       run: npm install
 
-    - name: Run linter
+    - name: lint
       run: npm run lint
+
